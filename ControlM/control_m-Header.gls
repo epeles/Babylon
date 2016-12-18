@@ -1,0 +1,24 @@
+﻿### Author:<b>Solicitante</b>: Milena Scanferla Coutinho / Chave: CYFI <br><b>Analista Responsável/Desenvolvedor</b>: Eitan Peles / Chave: EMPE <br><b>Gerência do desenvolvedor</b>: TIC/CPSW/IST-II
+### Author E-mail:
+### Browsing enabled:Yes
+### Case sensitive words:0
+### Copyright message:
+### File build number:0166F695
+### Description:O glossário apresenta informações técnicas de Jobs cadastrados no Control-M, que é a ferramenta corporativa de escalonamento de processos batch. Informações contempladas: Jobname; Data Center; Application; Group Name; Owner; Critical; Priority; Horário Mínimo de Início; Horário Máximo de Início; Dependências; Complementos se for de SAP BW (Process Chain ID, Process Chain Description), ou de ABAP (SAP Program, SAP Variant, SAP Type, SAP Target), ou de Comando (Linha de Comando), ou de ETL (Workflow, Session), ou de Cópia de Arquivo (Origem, Destino).<br><b> Fonte de dados:</b> relatórios extraídos da base de dados da ferramenta Control-M que estão disponibilizados em <a href="http://balor.petrobras.com.br/INTRANET/">http://balor.petrobras.com.br/INTRANET/</a><br>Sendo assim, no momento não contempla Jobs IBM. Para ver detalhamento das fontes, consultar <a href="https://conecte.petrobras.com.br/forums/html/topic?id=bb0269e3-9ea8-4ef7-8729-f22eae40f0d3">aqui</a><br>A iniciativa de criação deste glossário nasceu como sugestão no blog de idéias da comunidade Babylon no Conecte.
+### Glossary settings:00000000
+### Icon:..\Petrobras.ico
+### Glossary id:0265984496767d82766e9c869d8a89447c6e806d8778836b7293946066738b6f728c859f85686a3d9c8b8a6c6c79599c489189447c6e79a0415f4843414e44907a25245d
+### Confirmation string:F9158BOQ
+### Type of glossary:08088000
+### Gls type:00000001
+### Private label id:
+### Source alphabet:Latin
+### Source language:English
+### Target alphabet:Latin
+### Target language:English
+### Glossary title:Jobs do Control-M-28/04/2015
+### URI:!!TN97MRFGZX
+### Version ID:9
+### XSL Template:..\BabyTemplate8_No_Term.xsl
+### Glossary section:
+

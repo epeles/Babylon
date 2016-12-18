@@ -1,0 +1,195 @@
+﻿<term><!$bab_f_nome_></term><alt><!$bab_f_pchain_>|<!$bab_f_sap_program>|<!$bab_f_workflow>|<!$bab_f_session>|<!$bab_f_sap_variant></alt>
+
+<def>
+<table style="border-width: 1px; border-style: solid;">
+
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Job Name:</b> </td>
+    <td> <b><!$bab_f_nome_></b> </td>
+</tr>
+
+<!$babIF_rule_datacenter_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Data Center:</b> </td>
+    <td> <!$bab_f_datacenter_> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_application,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Application:</b> </td>
+    <td> <!$bab_f_application> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_groupname_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Group Name:</b> </td>
+    <td> <!$bab_f_groupname_> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_owner_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Owner:</b> </td>
+    <td> <!$bab_f_owner_> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_pchain_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>BW Process Chain:</b> </td>
+    <td> <!$bab_f_pchain_> </td>
+</tr>
+<!$babENDIF>
+<!$babIF_rule_desc_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>BW Process Chain Description:</b> </td>
+    <td> <!$bab_f_desc_> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_sap_program,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>SAP Program:</b> </td>
+    <td> <!$bab_f_sap_program> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_sap_variant,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>SAP Variant:</b> </td>
+    <td> <!$bab_f_sap_variant> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_sap_g_or_s_type,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>SAP Type:</b> </td>
+    <td> <!$bab_f_sap_g_or_s_type> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_sap_target,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>SAP Target:</b> </td>
+    <td> <!$bab_f_sap_target> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_cmd_line,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Comando:</b> </td>
+    <td> <!$bab_f_cmd_line> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_workflow,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Workflow:</b> </td>
+    <td> <!$bab_f_workflow> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_session,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Session:</b> </td>
+    <td> <!$bab_f_session> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_critical_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Critical:</b> </td>
+    <td> <!$bab_f_critical_> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_prioridade_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Priority:</b> </td>
+    <td> <!$bab_f_prioridade_> </td>
+</tr>
+<!$babENDIF>
+
+
+<!$babIF_rule_hmin_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Horário mínimo de início:</b> </td>
+    <td> <!$bab_f_hmin_> </td>
+</tr>
+<!$babENDIF>
+<!$babIF_rule_hmax_,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td > <b>Horário máximo de início:</b> </td>
+    <td> <!$bab_f_hmax_> </td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_depende_de1,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+    <td > <b>Depende da conclusão de:</b> </td>
+	<td><a href="bword://<bab_escaping><!$bab_f_depende_de1></bab_escaping>"><!$bab_f_depende_de1></a> - <!$bab_f_tipo_depende_de1>
+		<!$babIF_rule_depende_de2,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de2></bab_escaping>"><!$bab_f_depende_de2></a> - <!$bab_f_tipo_depende_de2><!$babENDIF>
+		<!$babIF_rule_depende_de3,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de3></bab_escaping>"><!$bab_f_depende_de3></a> - <!$bab_f_tipo_depende_de3><!$babENDIF>
+		<!$babIF_rule_depende_de4,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de4></bab_escaping>"><!$bab_f_depende_de4></a> - <!$bab_f_tipo_depende_de4><!$babENDIF>
+		<!$babIF_rule_depende_de5,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de5></bab_escaping>"><!$bab_f_depende_de5></a> - <!$bab_f_tipo_depende_de5><!$babENDIF>
+		<!$babIF_rule_depende_de6,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de6></bab_escaping>"><!$bab_f_depende_de6></a> - <!$bab_f_tipo_depende_de6><!$babENDIF>
+		<!$babIF_rule_depende_de7,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de7></bab_escaping>"><!$bab_f_depende_de7></a> - <!$bab_f_tipo_depende_de7><!$babENDIF>
+		<!$babIF_rule_depende_de8,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de8></bab_escaping>"><!$bab_f_depende_de8></a> - <!$bab_f_tipo_depende_de8><!$babENDIF>
+		<!$babIF_rule_depende_de9,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de9></bab_escaping>"><!$bab_f_depende_de9></a> - <!$bab_f_tipo_depende_de9><!$babENDIF>
+		<!$babIF_rule_depende_de10,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de10></bab_escaping>"><!$bab_f_depende_de10></a> - <!$bab_f_tipo_depende_de10><!$babENDIF>	
+		<!$babIF_rule_depende_de11,neq,null><br><a href="bword://<bab_escaping><!$bab_f_depende_de11></bab_escaping>"><!$bab_f_depende_de11></a> - <!$bab_f_tipo_depende_de11><!$babENDIF>
+	
+	</td>  
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_dependente1,neq,null>
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+     <td ><b>Dependente(s):</b> </td>
+	 <td><a href="bword://<bab_escaping><!$bab_f_dependente1></bab_escaping>"><!$bab_f_dependente1></a> - <!$bab_f_tipo_dependente1>
+		<!$babIF_rule_dependente2,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente2></bab_escaping>"><!$bab_f_dependente2></a> - <!$bab_f_tipo_dependente2><!$babENDIF>
+		<!$babIF_rule_dependente3,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente3></bab_escaping>"><!$bab_f_dependente3></a> - <!$bab_f_tipo_dependente3><!$babENDIF>
+		<!$babIF_rule_dependente4,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente4></bab_escaping>"><!$bab_f_dependente4></a> - <!$bab_f_tipo_dependente4><!$babENDIF>
+		<!$babIF_rule_dependente5,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente5></bab_escaping>"><!$bab_f_dependente5></a> - <!$bab_f_tipo_dependente5><!$babENDIF>
+		<!$babIF_rule_dependente6,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente6></bab_escaping>"><!$bab_f_dependente6></a> - <!$bab_f_tipo_dependente6><!$babENDIF>
+		<!$babIF_rule_dependente7,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente7></bab_escaping>"><!$bab_f_dependente7></a> - <!$bab_f_tipo_dependente7><!$babENDIF>
+		<!$babIF_rule_dependente8,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente8></bab_escaping>"><!$bab_f_dependente8></a> - <!$bab_f_tipo_dependente8><!$babENDIF>
+		<!$babIF_rule_dependente9,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente9></bab_escaping>"><!$bab_f_dependente9></a> - <!$bab_f_tipo_dependente9><!$babENDIF>
+		<!$babIF_rule_dependente10,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente10></bab_escaping>"><!$bab_f_dependente10></a> - <!$bab_f_tipo_dependente10><!$babENDIF>
+		<!$babIF_rule_dependente11,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente11></bab_escaping>"><!$bab_f_dependente11></a> - <!$bab_f_tipo_dependente11><!$babENDIF>
+		<!$babIF_rule_dependente12,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente12></bab_escaping>"><!$bab_f_dependente12></a> - <!$bab_f_tipo_dependente12><!$babENDIF>
+		<!$babIF_rule_dependente13,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente13></bab_escaping>"><!$bab_f_dependente13></a> - <!$bab_f_tipo_dependente13><!$babENDIF>
+		<!$babIF_rule_dependente14,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente14></bab_escaping>"><!$bab_f_dependente14></a> - <!$bab_f_tipo_dependente14><!$babENDIF>
+		<!$babIF_rule_dependente15,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente15></bab_escaping>"><!$bab_f_dependente15></a> - <!$bab_f_tipo_dependente15><!$babENDIF>
+		<!$babIF_rule_dependente16,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente16></bab_escaping>"><!$bab_f_dependente16></a> - <!$bab_f_tipo_dependente16><!$babENDIF>
+		<!$babIF_rule_dependente17,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente17></bab_escaping>"><!$bab_f_dependente17></a> - <!$bab_f_tipo_dependente17><!$babENDIF>
+		<!$babIF_rule_dependente18,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente18></bab_escaping>"><!$bab_f_dependente18></a> - <!$bab_f_tipo_dependente18><!$babENDIF>
+		<!$babIF_rule_dependente19,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente19></bab_escaping>"><!$bab_f_dependente19></a> - <!$bab_f_tipo_dependente19><!$babENDIF>
+		<!$babIF_rule_dependente20,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente20></bab_escaping>"><!$bab_f_dependente20></a> - <!$bab_f_tipo_dependente20><!$babENDIF>
+		<!$babIF_rule_dependente21,neq,null><br><a href="bword://<bab_escaping><!$bab_f_dependente21></bab_escaping>"><!$bab_f_dependente21></a> - <!$bab_f_tipo_dependente21><!$babENDIF>
+	</td>
+</tr>
+<!$babENDIF>
+
+</table>
+
+<!$babIF_rule_origem1,neq,null>
+<table style="border-width: 1px; border-style: solid;">
+
+<tr valign="left" style="background: #F2F2F2; font-size: 12px">
+    
+	 <td><b>Cópia de Arquivo:</b><br><b>Origem:</b> <!$bab_f_origem1>  <b>Destino:</b> <!$bab_f_destino1>
+		<!$babIF_rule_origem2,neq,null><br><b>Origem:</b> <!$bab_f_origem2>  <b>Destino:</b> <!$bab_f_destino2><!$babENDIF>
+		<!$babIF_rule_origem3,neq,null><br><b>Origem:</b> <!$bab_f_origem3>  <b>Destino:</b> <!$bab_f_destino3><!$babENDIF>
+		<!$babIF_rule_origem4,neq,null><br><b>Origem:</b> <!$bab_f_origem4>  <b>Destino:</b> <!$bab_f_destino4><!$babENDIF>
+		<!$babIF_rule_origem5,neq,null><br><b>Origem:</b> <!$bab_f_origem5>  <b>Destino:</b> <!$bab_f_destino5><!$babENDIF>
+		<!$babIF_rule_origem6,neq,null><br><b>São exibidas as informações de origem e destino de até 5 itens. Para a lista completa, consultar a documentação do Job.</b><!$babENDIF>
+		
+	</td>
+</tr>
+<!$babENDIF>
+
+</table>
+</def>
