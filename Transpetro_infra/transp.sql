@@ -1,0 +1,2 @@
+select *,splitstr(local,';#',2) localc, splitstr(servidor,';#',2) servidorc, splitstr(tecnologia,';#',2) tecnologiac, splitstr(codigo,';#',2) codigoc, splitstr(sistema,';#',2) sistemac, splitstr(sigla,';#',2) siglac, splitstr(pb2.CPD,';#',2) CPDNEW from pb join pb2 on pb2.SERVER=splitstr(pb.servidor,';#',2)
+WHERE splitstr(pb.servidor,';#',2) <> '' ORDER BY splitstr(pb.servidor,';#',2)
