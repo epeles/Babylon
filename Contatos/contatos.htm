@@ -1,0 +1,70 @@
+﻿<term><!$bab_f_chave></term><alt><!$bab_f_E-mail>|<!$bab_f_nome></alt>
+<!$babBREAKPREFIX>
+<def>
+<table width=80% border=0 RULES=NONE FRAME=BORDER">
+
+<!-- TÍTULO DA FICHA DO USUÁRIO, DEPENDENDO DO SEU VÍNCULO -->
+<!$babIF_rule_VINCULO,eq,F>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td colspan=3 align=center style="background: #108c50; color:white; font-size: 12px"><b><!$bab_f_nome></b></td>
+	</tr>
+<!$babENDIF>
+
+	
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">	
+	<!$babIF_rule_imagem,neq,https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg>	
+	<td valign=top align=center rowspan=12 width="30%">
+				<img border=1 width=100px height=120px src="<!$bab_f_imagem>" onerror=this.src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg">
+	</td>
+	<!$babENDIF>
+	
+	<!$babIF_rule_CHAVE,neq,null>
+		<td><b>Chave:</b></td>
+		<td><!$bab_f_CHAVE></td>
+	<!$babENDIF>
+	</tr>
+		
+	
+	<tr valign="top" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Telefone:</b></td><td>
+	<!$babENDIF>
+		<!$babENDBREAKPREFIX>
+			<!$bab_f_RAMAL><br>
+	<!$babBREAKSUFFIX>
+		</td>
+	</tr>
+	
+	<!$babIF_rule_e-mail,neq,null>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>E-mail:</b></td>
+		<td><a href="mailto:<!$bab_f_E-mail>"><!$bab_f_E-mail></a></td>
+	</tr>
+	<!$babENDIF>
+				
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Empresa</b></td>
+		<td><!$bab_f_EMPRESA></td>
+	</tr>
+	
+	
+	<!$babIF_rule_cargo,neq,null>
+	<tr align="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Cargo:</b></td>
+		<td><!$bab_f_cargo></td>
+	</tr>
+	<!$babENDIF>
+	
+			
+</table>	
+<table width=80% border=0 RULES=NONE" FRAME=BORDER">	
+<!-- RODAPÉ DA FICHA DO USUÁRIO, DEPENDENDO DO SEU VÍNCULO -->
+
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="https://www.facebook.com/<!$bab_f_chave>"><font color="#ffffff"><b>Visualizar no Facebook</b></a></font> 
+	</tr>
+
+</table>
+
+
+</def>
+<!$babENDBREAKSUFFIX>
