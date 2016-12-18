@@ -1,0 +1,93 @@
+﻿### Author:<b>Solicitante</b>: Adriana Pereira Ortega / Chave: MS10 / e-mail: aortega@petrobras.com.br<br><b>Analista Responsável/Desenvolvedor</b>: Eitan Menahem Peles / Chave: EMPE / e-mail: eitan.LVC_TI@petrobras.com.br<br><b>Gerência</b>: TIC/ADS-TI/SCD/CGC
+### Author E-mail:
+### EXT-DIC-no-definition-string:
+### EXT-DIC-start-string:[a]
+### EXT-DIC-end-string:[b]
+### EXT-DIC-URL:http://vip-webwin-babylon-bqa.petrobras.com.br/BQA/MentorGSI.asp?inc=
+### Browsing enabled:Yes
+### Case sensitive words:0
+### Copyright message:
+### File build number:0154B301
+### Description:Este glossário apresenta informações sobre os incidentes do Mentor.<br>As buscas devem ser feitas pelo número do incidente (ex. INC00). <br><b>Fontes de informação</b>: Mentor GSI <br>
+### Glossary settings:00000000
+### Icon:..\Petrobras.ico
+### Glossary id:028a67609883799b846e9c869d8a89447c6e7e9e9c88829e8363952a987b8e9e87729c9f8364662ba08f9a5990837059856489447c6e79a0415f4843414e44907a25245d
+### Confirmation string:3C052FCG
+### Type of glossary:09088000
+### Gls type:00000001
+### Private label id:
+### Source alphabet:Latin
+### Source language:English
+### Target alphabet:Latin
+### Target language:English
+### Glossary title:Mentor GSI
+### URI:!!Petrobras_Mentor_Hybrid
+### Version ID:4
+### XSL Template:BabyTemplate8_No_Term.xsl
+### XSL Template:BabyTemplate8_No_Term_No_SayIt.xsl
+### Glossary section:
+
+
+9000000|000009000000|INC000009000000
+[a]9000000[b]
+
+9000001|000009000001|INC000009000001
+[a]9000001[b]
+
+9000002|000009000002|INC000009000002
+[a]9000002[b]
+
+9000003|000009000003|INC000009000003
+[a]9000003[b]
+
+9000004|000009000004|INC000009000004
+[a]9000004[b]
+
+9000005|000009000005|INC000009000005
+[a]9000005[b]
+
+9000006|000009000006|INC000009000006
+[a]9000006[b]
+
+9000007|000009000007|INC000009000007
+[a]9000007[b]
+
+9000008|000009000008|INC000009000008
+[a]9000008[b]
+
+9000009|000009000009|INC000009000009
+[a]9000009[b]
+
+9000010|000009000010|INC000009000010
+[a]9000010[b]
+
+9000011|000009000011|INC000009000011
+[a]9000011[b]
+
+9000012|000009000012|INC000009000012
+[a]9000012[b]
+
+9000013|000009000013|INC000009000013
+[a]9000013[b]
+
+9000014|000009000014|INC000009000014
+[a]9000014[b]
+
+9000015|000009000015|INC000009000015
+[a]9000015[b]
+
+9000016|000009000016|INC000009000016
+[a]9000016[b]
+
+9000017|000009000017|INC000009000017
+[a]9000017[b]
+
+9000018|000009000018|INC000009000018
+[a]9000018[b]
+
+9000019|000009000019|INC000009000019
+[a]9000019[b]
+
+9000020|000009000020|INC000009000020
+[a]9000020[b]
+
