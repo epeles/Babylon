@@ -1,0 +1,225 @@
+﻿<term><!$bab_f_uidx></term><alt><!$bab_f_chave>|<!$bab_f_MATRICULA_IDENT>|<!$bab_f_nome>|<!$bab_f_E-mail></alt>
+<!$babBREAKPREFIX>
+<def>
+<table width=80% border=0 RULES=NONE FRAME=BORDER">
+
+<!-- TÍTULO DA FICHA DO USUÁRIO, DEPENDENDO DO SEU VÍNCULO -->
+<!$babIF_rule_VINCULO,eq,F>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td colspan=3 align=center style="background: #108c50; color:white; font-size: 12px"><b><!$bab_f_nome></b></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_VINCULO,eq,T>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td colspan=3 align=center style="background: #108c50; color:white; font-size: 12px"><b><!$bab_f_nome></b></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_VINCULO,eq,I>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td colspan=3 align=center style="background: #108c50; color:white; font-size: 12px"><b><!$bab_f_nome></b></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_VINCULO,eq,C>	
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td colspan=3 align=center style="background: #ffcc33; color:black; font-size: 12px"><b><!$bab_f_nome></b></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_VINCULO,eq,E>	
+	<tr valign="left" style="background: #303030; font-size: 11px">
+		<td colspan=3 align=center style="background: #FFFF33; color:black; font-size: 12px"><b><!$bab_f_nome></b></td>
+	</tr>
+<!$babENDIF>
+	
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">	
+	<!$babIF_rule_LINK_FOTO,neq,http://localizadorpessoas.petrobras.com.br/lope/images/placeholder.jpg>	
+	<td valign=top align=center rowspan=12 width="30%">
+				<img border=1 width=100px height=120px src="Scan18.png" onerror=this.src="http://localizadorpessoas.petrobras.com.br/lope/images/placeholder.jpg">
+	</td>
+	<!$babENDIF>
+	
+	<!$babIF_rule_CHAVE,neq,null>
+		<td><b>Chave:</b></td>
+		<td><!$bab_f_CHAVE></td>
+	<!$babENDIF>
+	</tr>
+		
+	<!$babIF_rule_tipo_tel,neq,null>
+	<tr valign="top" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Telefone:</b></td><td>
+	<!$babENDIF>
+		<!$babENDBREAKPREFIX>
+		<!$babIF_rule_Ramal,neq,null>
+			<!$bab_f_RAMAL_TITLE>&nbsp;<!$bab_f_RAMAL><br>
+		<!$babENDIF>
+	<!$babBREAKSUFFIX><!$babIF_rule_Ramal,neq,null>
+		</td>
+	</tr>
+	<!$babENDIF>
+
+	<!$babIF_rule_e-mail,neq,null>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>E-mail:</b></td>
+		<td><a href="mailto:<!$bab_f_E-mail>"><!$bab_f_E-mail></a></td>
+	</tr>
+	<!$babENDIF>
+				
+	<!$babIF_rule_MATRICULA_TITLE,neq,X>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b><!$bab_f_matricula_title></b></td>
+		<td><!$babCUTPREFIX_MATRICULA_IDENT,0></td>
+	</tr>
+	<!$babENDIF>
+	
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b><!$bab_f_empresa_title></b></td>
+		<td><!$bab_f_EMPRESA_ACESSO></td>
+	</tr>
+	
+	<!$babIF_rule_VINCULO,eq,C>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Empresa contratada:</b></td>
+		<td><!$bab_f_EMPRESA_CONTRATADA></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_VINCULO,eq,I>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Empresa de origem:</b></td>
+		<td><!$bab_f_EMPRESA_ORIGEM></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_VINCULO,eq,T>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Empresa de origem:</b></td>
+		<td><!$bab_f_EMPRESA_ORIGEM></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_PAIS_EMPRESA_ACESSO,neq,BRASIL>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>País:</b></td>
+		<td><!$bab_f_PAIS_EMPRESA_ACESSO></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_cargo,neq,null>
+	<tr align="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Cargo:</b></td>
+		<td><!$bab_f_cargo></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_funcao,neq,null>
+	<tr align="left" style="background: #F5F5F5; font-size: 11px">
+		<td><b>Função:</b></td>
+		<td><!$bab_f_funcao></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_lotacao_title,neq,X>
+	<tr valign="top" style="background: #F5F5F5; font-size: 11px">
+		<td><b><!$bab_f_lotacao_title></b></td>
+		<td><a href="bword://<!$bab_f_LOTACAO>" glossuri="!!95VBCT5F2P"><!$bab_f_LOTACAO></a></td>
+	</tr>
+	<!$babENDIF>
+	
+	<!$babIF_rule_SIGLA_IMOVEL,neq,null>
+	<tr valign="left" style="background: #F5F5F5; font-size: 11px">
+		<td width="20%"><b><!$bab_f_imovel_title></b></td>
+		<td width="80%"><!$bab_f_SIGLA_IMOVEL><br><!$babIF_rule_RUA_IMOVEL,neq,null>&nbsp;&nbsp;&nbsp;<!$bab_f_RUA_IMOVEL>&nbsp;&nbsp;&nbsp;<!$bab_f_COMPL_NUMERO_IMOVEL><br>&nbsp;&nbsp;&nbsp;<!$bab_f_BAIRRO_IMOVEL><br>&nbsp;&nbsp;&nbsp;<!$bab_f_CIDADE_IMOVEL> - <!$bab_f_ESTADO_IMOVEL></td><!$babENDIF>
+	</tr>
+	<!$babENDIF>
+			
+</table>	
+<table width=80% border=0 RULES=NONE" FRAME=BORDER">	
+<!-- RODAPÉ DA FICHA DO USUÁRIO, DEPENDENDO DO SEU VÍNCULO -->
+<!$babIF_rule_COR_CRACHA,eq,VERDE>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#ffffff"><b>Localizador de Pessoas</b></a></font> | <a href="https://conecte.petrobras.com.br/profiles/html/profileView.do?userid=<!$bab_f_chave>"><font color="#ffffff"><b>Perfil no Conecte</b></font></a></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_COR_CRACHA,eq,VERDE_I>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#ffffff"><b>Localizador de Pessoas</b></a></font> | <a href="https://conecte.petrobras.com.br/profiles/html/profileView.do?userid=<!$bab_f_chave>"><font color="#ffffff"><b>Perfil no Conecte</b></font></a></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_COR_CRACHA,eq,VERDE_T>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#ffffff"><b>Localizador de Pessoas</b></a></font> | <a href="https://conecte.petrobras.com.br/profiles/html/profileView.do?userid=<!$bab_f_chave>"><font color="#ffffff"><b>Perfil no Conecte</b></font></a></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_COR_CRACHA,eq,MARROM>
+	<tr align=center style="background: #ffcc33; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><b>Localizador de Pessoas</b></a> | <a href="https://conecte.petrobras.com.br/profiles/html/profileView.do?userid=<!$bab_f_chave>"><b>Perfil no Conecte</b></a></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_COR_CRACHA,eq,AMARELO>
+	<tr align=center style="background: #FFFF33; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#303030"><b>Localizador de Pessoas</b></a></font> | <a href="https://conecte.petrobras.com.br/profiles/html/profileView.do?userid=<!$bab_f_chave>"><font color="#303030"><b>Perfil no Conecte</b></a></font></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,MARROM_NAO_PETROBRAS>
+	<tr align=center style="background: #ffcc33; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><b>Localizador de Pessoas</b></a></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,MARROM_SEM_CHAVE>
+	<tr align=center style="background: #ffcc33; font-size: 11px;">
+		<td colspan=3><a href="http://localizadorpessoas.petrobras.com.br"><b>Localizador de Pessoas</b></a></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,VERDE_I_NAO_PETROBRAS>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#ffffff"><b>Localizador de Pessoas</b></font></a></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_COR_CRACHA,eq,VERDE_NAO_PETROBRAS>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#ffffff"><b>Localizador de Pessoas</b></font></a></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,VERDE_SEM_CHAVE>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://localizadorpessoas.petrobras.com.br"><font color="#ffffff"><b>Localizador de Pessoas</b></font></a></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,VERDE_T_NAO_PETROBRAS>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>"><font color="#ffffff"><b>Localizador de Pessoas</b></font></a></td>
+	</tr>
+<!$babENDIF>
+<!$babIF_rule_COR_CRACHA,eq,AMARELO_NAO_PETROBRAS>
+	<tr align=center style="background: #FFFF33; font-size: 11px;">
+		<td colspan=3><font color="#303030"><b><a href="http://portalpetrobras.petrobras.com.br/PetrobrasPortal/appmanager/portal/desktop?_nfpb=true&_pageLabel=dctm_landing_page_localizador_de_pessoas_a_petrobras&origem=portletlope&unico=<!$bab_f_chave>">Localizador de Pessoas</a></b></font></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,AMARELO_SEM_CHAVE>
+	<tr align=center style="background: #FFFF33; font-size: 11px;">
+		<td colspan=3><font color="#303030"><b><a href="http://localizadorpessoas.petrobras.com.br">Localizador de Pessoas</a></b></font></td>
+	</tr>
+<!$babENDIF>
+
+<!$babIF_rule_COR_CRACHA,eq,VERDE_T_SEM_CHAVE>
+	<tr align=center style="background: #108c50; font-size: 11px;">
+		<td colspan=3><a href="http://localizadorpessoas.petrobras.com.br"><font color="#ffffff"><b>Localizador de Pessoas</b></font></a></td>
+	</tr>
+<!$babENDIF>
+
+</table>
+
+<!-- JAVASCRIPT PARA EXIBIR SOMENTE A FICHA DO USUÁRIO, AO INVÉS DE MOSTRAR JUNTO COM A LISTA DE NOMES -->
+<script language="javascript" defer="true">
+var pbDOC = document.getElementsByName('pbALT');
+for (var i = 0; i < pbDOC.length; i++){
+   pbDOC[i].style.display = "none";
+}
+</script>
+</def>
+<!$babENDBREAKSUFFIX>
