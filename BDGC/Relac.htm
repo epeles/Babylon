@@ -1,0 +1,73 @@
+﻿<!$babTERM><term><!$bab_f_ELM_chave_base></term><!$babENDTERM>
+<!$babBREAKPREFIX>
+<def>
+<tr align="left" style="background: #F2F2F2;"><td style="font-size: 12px; " colspan=2><a href="bword://<bab_escaping><!$bab_f_elm_id_do_ic></bab_escaping>">Clique aqui para voltar à página anterior</a></tr>
+<br>
+<br>
+<table id="relations" width="450">
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="9"><b>RELACIONAMENTOS do IC <!$bab_f_elm_id_do_ic></b></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>ID do IC</b></td>
+	<td><b>Nome do IC</b></td>
+	<td><b>Classe</b></td>
+	<td><b>Tipo do IC</b></td>
+	<td><b>Nível 1</b></td>
+	<td><b>Nível 2</b></td>
+	<td nowrap><b>Nível 3</b></td>
+	<td><b>Nome do Produto</b></td>
+	<td><b>Relac</b></td>
+ </tr>
+ </table>
+ <!$babENDIF>
+<br>
+<br>
+<tr align="left" style="background: #F2F2F2;"><td style="font-size: 12px; " colspan=2><a href="bword://<bab_escaping><!$bab_f_elm_id_do_ic></bab_escaping>">Clique aqui para voltar à página anterior</a></tr>
+
+<form name="extra"><input type="hidden" name="AlreadyDid" value="0"></form>
+<script language="JavaScript" defer="true">
+if (document.extra.AlreadyDid.value != "1") {
+document.extra.AlreadyDid.value = "1";
+<!$babENDBREAKPREFIX>
+if ("<!$bab_f_rtype>"=="1R") {
+document.getElementById('relations').style.display="inline";
+var i=2;
+var x=document.getElementById('relations').insertRow(i);
+x.style.font="11px arial,serif";
+x.style.backgroundColor="#F5F5F5"; 
+var y=x.insertCell(0);
+y.innerHTML="<A id=R<!$babISA>><!$bab_f_ID_DO_IC_R></A>";
+y.style.textAlign="left";
+y=x.insertCell(1);
+y.innerHTML="<!$bab_f_NOME_DO_IC_ORIGEM_R>";
+y.style.textAlign="left";
+y=x.insertCell(2);
+y.innerHTML="<!$bab_f_CLASSE_R>";
+y.style.textAlign="left";
+y=x.insertCell(3);
+y.innerHTML="<!$bab_f_TIPO_IC_R>";
+y.style.textAlign="left";
+y=x.insertCell(4);
+y.innerHTML="<!$bab_f_NIVEL_1_R>";
+y.style.textAlign="left";
+y=x.insertCell(5);
+y.innerHTML="<!$bab_f_NIVEL_2_R>";
+y.style.textAlign="left";
+y=x.insertCell(6);
+y.innerHTML="<!$bab_f_NIVEL_3_R>";
+y.style.textAlign="left";
+y=x.insertCell(7);
+y.innerHTML="<!$bab_f_NOME_DO_PRODUTO_R>";
+y.style.textAlign="left";
+y=x.insertCell(8);
+y.innerHTML="<!$bab_f_RR>";
+y.style.textAlign="left";
+i=i+1;
+}
+document.getElementById("R<!$babISA>").href="bword://NOBOOST,!!petrobras_bdgc,<!$bab_f_ID_DO_IC_R>";
+<!$babBREAKSUFFIX>
+}
+</script>
+</def>
+<!$babENDBREAKSUFFIX>

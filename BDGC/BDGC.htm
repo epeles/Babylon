@@ -1,0 +1,201 @@
+﻿<term><!$bab_f_elm_id_do_ic></term><alt><!$bab_f_ELM_NOME_DO_IC>|<!$bab_f_NOME_LOGICO>|<!$bab_f_SIGLA>|<!$bab_f_BP>|<!$bab_f_NUM_SERIE></alt>
+<!$babBREAKPREFIX>
+<def>
+
+<table width="450">
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="2"><b>IDENTIFICAÇÃO</b></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td style="width:115px"><b>ID do IC</b></td>
+    <td><!$bab_f_ELM_ID_DO_IC></td>
+</tr>
+
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Nome do IC</b></td>
+    <td><!$bab_f_ELM_NOME_DO_IC></td>
+</tr>
+
+<!$babIF_rule_ELM_NIVEL_1,eq,HARDWARE>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Nome Lógico</b></td>
+    <td><!$bab_f_ELM_NOME_LOGICO></td>
+</tr>
+<!$babENDIF>
+
+<!$babIF_rule_ELM_NIVEL_1,eq,SOFTWARE>  
+	<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Sigla</b></td>
+    <td><!$bab_f_ELM_SIGLA></td>
+</tr>
+<!$babENDIF>	
+
+</table>
+<br>
+<table id="people" width="450">
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="2"><b>PESSOAS</b></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Nome Completo</b></td>
+    <td><b>Papel</b></td>
+</tr>
+</table>
+<br>
+<br>
+<table width="450">
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="2"><b>DETALHES</b></td>
+</tr>
+
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td style="width:115px"><b>Status</b></td>
+    <td><!$bab_f_ELM_STATUS></td>
+</tr>
+
+<!$babIF_rule_ELM_NIVEL_1,eq,HARDWARE>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+     <td><b>Motivo do Status</b></td>
+     <td><!$bab_f_ELM_MOTIVO_DO_STATUS></td>
+</tr>
+<!$babENDIF>
+
+
+<!$babIF_rule_ELM_NIVEL_3,eq,SERVIDOR>  
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Número de Série</b></td>
+    <td><!$bab_f_ELM_NUMERO_DE_SERIE></td>
+</tr>
+<!$babENDIF>	
+
+<!$babIF_rule_ELM_NIVEL_3,eq,SERVER>  
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Número de Série</b></td>
+    <td><!$bab_f_ELM_NUMERO_DE_SERIE></td>
+</tr>
+<!$babENDIF>	
+
+
+<!$babIF_rule_ELM_NIVEL_3,eq,SERVIDOR>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>BP</b></td>
+	<td><!$bab_f_ELM_BP></td>
+</tr>
+<!$babENDIF>	
+
+<!$babIF_rule_ELM_NIVEL_3,eq,SERVER>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>BP</b></td>
+	<td><!$bab_f_ELM_BP></td>
+</tr>
+<!$babENDIF>	
+
+
+
+<!$babIF_rule_ELM_NIVEL_3,eq,SERVIDOR>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>Tipo de Aquisição</b></td>
+	<td><!$bab_f_ELM_TIPO_DE_AQUISICAO></td>
+</tr>
+<!$babENDIF>	
+
+<!$babIF_rule_ELM_NIVEL_3,eq,SERVER>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>Tipo de Aquisição</b></td>
+	<td><!$bab_f_ELM_TIPO_DE_AQUISICAO></td>
+</tr>
+<!$babENDIF>	
+
+</table>
+<br>
+<table width="450">
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="2"><b>CATEGORIZAÇÃO</b></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td style="width:115px"><b>Tipo do IC</b></td>
+	<td><!$bab_f_ELM_TIPO_IC></td>
+</tr>
+	
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Nível 1</b></td>
+	<td><!$bab_f_ELM_NIVEL_1></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>Nível 2</b></td>
+	<td><!$bab_f_ELM_NIVEL_2></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>Nível 3</b></td>
+	<td><!$bab_f_ELM_NIVEL_3></td>
+</tr>
+<tr style="background: #F5F5F5 ; font-size: 11px">
+	<td><b>Nome do Produto</b></td>
+	<td><!$bab_f_ELM_NOME_DO_PRODUTO></td>
+</tr>
+</table>
+<br>
+<table width="450"> 
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="2"><b>LOCALIZAÇÃO</b></td>
+</tr>
+
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td style="width:115px"><b>Região</b></td>
+    <td><!$bab_f_ELM_REGIAO></td>
+</tr>
+
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Site</b></td>
+    <td><!$bab_f_ELM_SITE></td>
+</tr>
+
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Andar</b></td>
+    <td><!$bab_f_ELM_ANDAR></td>
+</tr>
+
+<tr style="background: #F5F5F5 ; font-size: 11px">
+    <td><b>Complemento</b></td>
+    <td><!$bab_f_ELM_COMPLEMENTO></td>
+</tr>
+
+</table>
+
+<br>
+<br>
+<hr>
+<!$babIF_rule_ID_DO_IC_R,neq,null>
+<table width="450">
+<tr style="background: #AFEEEE; font-size: 11px">
+<td colspan="2"><b>RELACIONAMENTOS</b></td>
+</tr>
+<tr align="left" style="background: #F2F2F2;"><td style="font-size: 12px; " colspan=2><a href="bword://<bab_escaping><!$bab_f_ELM_chave_base></bab_escaping>">Clique aqui para ver os relacionamentos deste IC</a> 
+</table>
+ <!$babENDIF>
+ 
+<form name="extra"><input type="hidden" name="AlreadyDid" value="0"></form>
+<script language="JavaScript" defer="true">
+if (document.extra.AlreadyDid.value != "1") {
+document.extra.AlreadyDid.value = "1";
+<!$babENDBREAKPREFIX>
+ if ("<!$bab_f_rtype>"=="2P") {
+document.getElementById('people').style.display="inline";
+var j=2;
+var k=document.getElementById('people').insertRow(j);
+k.style.font="11px arial,serif";
+k.style.backgroundColor="#F5F5F5"; 
+var l=k.insertCell(0);
+l.innerHTML="<!$bab_f_CLASSE_R>";
+l.style.textAlign="left";
+l=k.insertCell(1);
+l.innerHTML="&nbsp;<!$bab_f_NOME_LOGICO_R>";
+l.style.textAlign="left";
+j=j+1;
+}
+<!$babBREAKSUFFIX>
+}
+
+</script>
+</def>
+<!$babENDBREAKSUFFIX>
